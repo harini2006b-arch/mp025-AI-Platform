@@ -38,14 +38,17 @@
     position:relative;
     z-index:5;
     width:92%;
-    max-width:1600px;
+    max-width:1550px;
     margin:auto;
+
     min-height:100vh;
 
     display:grid;
-    grid-template-columns:minmax(550px,1fr) 620px;
-    gap:140px;
+    grid-template-columns:1fr 600px;
+    gap:120px;
     align-items:center;
+
+    padding-top:120px;
 }
 
 /* ===========================
@@ -235,9 +238,11 @@ scale(1);
 .hero-right{
     display:flex;
     justify-content:flex-end;
-    align-items:center;
+    align-items:flex-start;
+
+    padding-top:60px;
+
     animation:floatCard 5s ease-in-out infinite;
-    width:100%;
 }
 
 /* Heading */
