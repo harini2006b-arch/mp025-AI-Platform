@@ -1,0 +1,198 @@
+.features-section{
+    padding:100px 0;
+    background:linear-gradient(180deg,#F1F6F4,#D9E8E2);
+}
+
+.features-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.features-heading span{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:40px;
+    background:#FFC801;
+    color:#172B36;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.features-heading h2{
+    font-family:var(--heading-font);
+    font-size:3rem;
+    color:#172B36;
+    margin-bottom:20px;
+}
+
+.features-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#5f6b74;
+    line-height:1.8;
+}
+
+/* ================= Grid ================= */
+
+.bento-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+/* ================= Card ================= */
+
+.bento-card{
+    background:#ffffff;
+    border-radius:24px;
+    padding:35px;
+    min-height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition:all .35s ease;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.bento-card:hover{
+    transform:translateY(-10px);
+    border-color:#FFC801;
+    box-shadow:0 20px 45px rgba(17,76,90,.15);
+}
+
+/* Active Card */
+
+.bento-card.active{
+
+    background:linear-gradient(
+        135deg,
+        #114C5A,
+        #172B36
+    );
+
+    border:2px solid #FFC801;
+
+    color:#F1F6F4;
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 50px rgba(17,76,90,.35);
+
+}
+
+/* Number */
+
+.feature-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#FFC801;
+    color:#172B36;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+/* Title */
+
+.bento-card h3{
+    font-family:var(--heading-font);
+    font-size:1.5rem;
+    color:#172B36;
+    margin-bottom:18px;
+}
+
+/* Description */
+
+.bento-card p{
+    color:#5f6b74;
+    line-height:1.8;
+}
+
+/* Active Text */
+
+.bento-card.active h3{
+    color:#FFC801;
+}
+
+.bento-card.active p{
+    color:#F1F6F4;
+}
+
+.bento-card.active .feature-number{
+    background:#FFC801;
+    color:#172B36;
+}
+
+/* ================= Accordion ================= */
+
+.accordion{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.accordion-item{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.accordion-header{
+    width:100%;
+    background:#fff;
+    padding:22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.accordion-content{
+    padding:0 22px 22px;
+    color:#5f6b74;
+    line-height:1.8;
+    animation:fadeIn .35s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.features-section{
+    padding:70px 0;
+}
+
+.features-heading h2{
+    font-size:2.3rem;
+}
+
+.bento-grid{
+    grid-template-columns:1fr;
+}
+
+}
