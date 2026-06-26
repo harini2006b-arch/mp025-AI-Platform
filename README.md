@@ -66,43 +66,8 @@ src
 │
 ├── App.js
 └── index.js
+
 ```
-
----
-
-## Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/harini2006b-arch/mp025-AI-Platform.git
-```
-
-Navigate to the project directory
-
-```bash
-cd mp025-AI-Platform
-```
-
-Install project dependencies
-
-```bash
-npm install
-```
-
-Start the development server
-
-```bash
-npm start
-```
-
-Generate a production build
-
-```bash
-npm run build
-```
-
----
 
 ## Design Principles
 
@@ -132,31 +97,9 @@ npm run build
 
 **Live Application**
 
-> Replace with your deployed Vercel URL
-
 ```
-https://your-vercel-app.vercel.app
+https://mp025-ai-platform-btn2.vercel.app/
 ```
-
----
-
-## Source Code
-
-GitHub Repository
-
-```
-https://github.com/harini2006b-arch/mp025-AI-Platform
-```
-
----
-
-## Author
-
-**Harini B**
-
-Frontend Developer | React.js Developer | UI/UX Enthusiast
-
----
 
 ## License
 
